@@ -12,4 +12,4 @@ For example, `people.yaml` will include dictionaries of people including their n
 
 `render.py` will output static html files into the `website` directory; all image files etc will need to be preloaded into the appropriate folders of `website`.
 
-Most of this has yet to be implemented, but it should greatly
+Most of this has yet to be implemented, but it should greatly ease website creation/maintenance.
