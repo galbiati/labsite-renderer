@@ -4,7 +4,7 @@ This tool uses tornado templates to make managing lab websites easier.
 
 `base.html` defines the basic layout, with a header, possibly a footer.
 
-Other html files will {% extends base.html %}.
+Other html files will `{% extends base.html %}`.
 
 Page contents that require updating will be created as YAML files for easy maintenance.
 
