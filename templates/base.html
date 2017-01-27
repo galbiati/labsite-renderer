@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+{% block head %}
+  <title>{% block pagetitle %}Title{% end %}</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href={{ "static/styles/stylesheet.css" }}>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+{% end %}
+</head>
+
+<body>
+  {% block body %}
+  <div class='container-fluid'>
+    {% block header %}
+    <div class="row p-header">
+      <nav class="navbar navbar-default site-nav">
+        <div class="containter-fluid">
+          <div class="col-md-12">
+            <div class="row">
+              <div class="col-sm-12">
+                <img style="max-height:120px; margin-top:-70px;" class="hidden-sm hidden-xs" src="./static/images/seal.png" id="lab-seal">
+                <div style="display:inline-block; max-width: 600px;">
+                  <h1 style="display:inline-block; margin-left:10px; margin-top: 25px;">Wei Ji Ma lab</h1>
+                  <p style="display:inline-block; margin-left:10px">
+                    <a href="http://www.cns.nyu.edu/">Center for Neural Science</a> and
+                    <a href="http://www.psych.nyu.edu/psychology.html">Department of Psychology</a> at New York University
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <ul class="row nav site-nav">
+                  <li role="presentation" class="active col-sm-2"><a href="./index.html">Home</a></li>
+                  <li role="presentation" class="col-sm-2"><a href="./projects.html">Projects</a></li>
+                  <li role="presentation" class="col-sm-2"><a href="./people.html">People</a></li>
+                  <li role="presentation" class="col-sm-2"><a href="./publications.html">Publications</a></li>
+                  <li role="presentation" class="col-sm-2"><a href="./resources.html">Resources</a></li>
+                  <li role="presentation" class="col-sm-2"><a href="./courses.html">Courses</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    {% end %}
+    {% block content %}
+    {% end %}
+  </div>
+  {% end %}
+</body>
+
+</html>
